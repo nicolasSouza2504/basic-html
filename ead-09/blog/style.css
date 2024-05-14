@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.side-bar {
+    grid-template-columns:  repeat(1, 5vw);
+    background-color: #f4f4f4;
+    max-width: 10vw;
+    display: grid;
+    padding: 1vmin;
+}
+
+.item:hover{
+    background-color: #ddd;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.item {
+    width: 10vw;
+}
