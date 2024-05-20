@@ -19,4 +19,41 @@ body {
     height: 100vh;
 }
 
+.artists  {
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(1, 25vw);
+}
+
+.musics  {
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(1, 25vw);
+}
+
+.albums  {
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(1, 25vw);
+}
+
+img {
+    max-width: 15vw;
+    max-height: 25vh;
+    min-width: 10vw;
+    min-height: 20vh;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
 
