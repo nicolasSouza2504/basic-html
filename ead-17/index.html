@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+
+<script>
+
+    let animais = ['cachorro', 'gato', 'papagaio'];
+
+    console.log('Animais: ' + JSON.stringify(animais));
+
+    animais.shift();
+
+    console.log('Animais: ' + JSON.stringify(animais));
+
+    animais.unshift('leão', 'tigre');
+
+    console.log('Animais: ' + JSON.stringify(animais));
+
+    animais[1] = 'girafa';
+
+    console.log('Animais: ' + JSON.stringify(animais));
+
+    let frutas = ['banana', 'maçã', 'uva', 'laranja'];
+
+    console.log('Número de frutas: ' + frutas.length);
+
+    for (let i = 0; i < frutas.length; i++) {
+        console.log('Fruta: ' + frutas[i]);
+    }
+
+
+</script>
+</body>
+</html>
