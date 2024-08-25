@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS</title>
+</head>
+<body>
+
+<script>
+
+  console.log("\n Números de 0 a 10 -> \n")
+
+  for (let i = 0; i <= 10; i++) {
+    console.log(i)
+  }
+
+
+  console.log("\n Números impáres de 0 a 20 -> \n")
+
+  for (let i = 0; i <= 20; i++) {
+
+    if (i % 2 != 0) {
+      console.log(i)
+    }
+
+  }
+
+  let num = 0;
+
+  console.log("\n While de 0 a 10 -> \n")
+
+  while (num <= 10) {
+
+    console.log(num);
+
+    num ++;
+
+  }
+
+  console.log("\n Loop de 0 a 100, interrompendo no 50 -> \n")
+
+  for (let i = 0; i <= 100; i++) {
+
+    console.log(i);
+
+    if (i == 50) {
+      break;
+    }
+
+  }
+
+  console.log("\n Loop de 0 a 20, pulando o 13 -> \n")
+
+    for (let i = 0; i <= 20; i++) {
+
+        if (i == 13) {
+          continue;
+        }
+
+        console.log(i);
+
+    }
+
+    let nomes = ['Nicolas', 'João', 'Maria', 'José', 'Ana'];
+
+    console.log("\n Nomes do array -> \n")
+
+    for (let nome of nomes) {
+      console.log(nome)
+    }
+
+</script>
+</body>
+</html>
