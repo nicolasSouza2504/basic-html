@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    // 1) Classificação por Idade: Escreva um programa que classifica uma pessoa
+    // em categorias de idade: 'criança' (menos de 13 anos), 'adolescente' (entre 13 e
+    // 17 anos), 'adulto' (entre 18 e 64 anos) e 'idoso' (65 anos ou mais). Use a
+    // estrutura if/else/else if.
+    // 2) Jogo de Adivinhação com Switch: Desenvolva um jogo simples de
+    // adivinhação onde o usuário tenta adivinhar um número entre 1 e 5. Use
+    // switch para verificar a escolha e imprimir se acertou ou não.
+    //     3) Avaliação de Notas: Crie um programa que, dada uma nota de um aluno,
+    //         classifica a nota como 'Reprovado' (menos de 6), 'Recuperação' (entre 6 e 7),
+    //     ou 'Aprovado' (mais de 7). Use switch.
+
+    console.log('\nCLASSIFICAÇÃO POR IDADE\n')
+
+    let idades = [10, 15, 20, 70];
+
+    for (let i = 0; i < idades.length; i++) {
+
+        if (idades[i] < 13) {
+            console.log('Criança - ' + idades[i]);
+        } else if (idades[i] >= 13 && idades[i] <= 17) {
+            console.log('Adolescente - ' + idades[i]);
+        } else if (idades[i] >= 18 && idades[i] <= 64) {
+            console.log('Adulto - ' + idades[i]);
+        } else {
+            console.log('Idoso - ' + idades[i]);
+        }
+
+    }
+
+
+    console.log('\nSORTEIO DE NÚMEROS ATÉ 5\n')
+
+    let numeros = [1, 2, 3, 4, 5];
+
+    let randomNumber = Math.floor(Math.random() * 5) + 1;
+
+    for (let i = 0; i < numeros.length; i++) {
+
+        switch (numeros[i]) {
+            case randomNumber:
+                console.log('Acertou - ' + numeros[i]);
+                break;
+            default:
+                console.log('Errou - ' + numeros[i]);
+                break;
+        }
+
+    }
+
+    console.log('\nAVALIAÇÃO DE NOTAS\n')
+
+    let notas = [5, 6, 7, 8];
+
+    for (let i = 0; i < notas.length; i++) {
+
+        switch (true) {
+            case notas[i] < 6:
+                console.log('Reprovado - ' + notas[i]);
+                break;
+            case notas[i] >= 6 && notas[i] <= 7:
+                console.log('Recuperação - ' + notas[i]);
+                break;
+            default:
+                console.log('Aprovado - ' + notas[i]);
+                break;
+        }
+
+    }
+
+</script>
+</body>
+</html>
