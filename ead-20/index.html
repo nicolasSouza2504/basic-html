@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    // 1. Função que Calcula a Área de um Retângulo: Crie uma função que
+    // calcula a área de um retângulo dado largura e altura.
+    // 2. Função para Verificar Número Par: Faça uma função que recebe um
+    // número e retorna true se for par e false se for ímpar.
+    //     3. Converter Polegadas em Centímetros: Escreva uma função que
+    // converte polegadas em centímetros.
+    // 4. IMC: Escreva uma função que calcula o Índice de Massa Corporal (IMC).
+    // 5. Maiúsculas para Minúsculas: Crie uma função que recebe uma string e
+    // retorna a mesma string em letras minúsculas.
+    // 6. Crie uma arrow function chamada multiplicaPorDez que recebe um
+    // número como parâmetro e retorna o valor multiplicado por 10.
+
+    console.log('\nÁREA DE UM RETÂNGULO\n')
+
+    let areaRetangulo = (largura, altura) => {
+        return largura * altura;
+    };
+
+    console.log("Área do Retângulo: " + areaRetangulo(10, 5));
+
+    console.log('\nNÚMERO PAR\n')
+
+    let numeroPar = (numero) => {
+        return numero % 2 == 0;
+    };
+
+    console.log("Número Par: " + numeroPar(10));
+
+    console.log('\nPOLEGADAS PARA CENTÍMETROS\n')
+
+    let polegadasParaCentimetros = (polegadas) => {
+        return polegadas * 2.54;
+    };
+
+    console.log("Polegadas para Centímetros: " + polegadasParaCentimetros(10));
+
+    console.log('\nÍNDICE DE MASSA CORPORAL\n')
+
+    let imc = (peso, altura) => {
+        return peso / (altura * altura);
+    };
+
+    console.log("IMC: " + imc(70, 1.75));
+
+    console.log('\nMAIÚSCULAS PARA MINÚSCULAS\n')
+
+    let maiusculasParaMinusculas = (string) => {
+        return string.toLowerCase();
+    };
+
+    console.log("Maiúsculas para Minúsculas: " + maiusculasParaMinusculas('NICOLAS'));
+
+    console.log('\nMULTIPLICA POR DEZ\n')
+
+    let multiplicaPorDez = (numero) => {
+        return numero * 10;
+    };
+
+    console.log("Multiplica por Dez: " + multiplicaPorDez(5));
+
+
+</script>
+</body>
+</html>
