@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+
+    // 1. Criar e Adicionar Pares Chave-Valor no Map: Crie um Map chamado
+    // livros e adicione nele três pares de chave-valor, onde a chave é o
+    // título do livro e o valor é o autor.
+    // 2. Acessar Valor no Map: Acesse o valor associado a uma das chaves no
+    // Map livros que você criou e imprima o nome do autor.
+    // 3. Iterar Sobre um Map: Use um loop for...of para iterar sobre o Map
+    // livros e imprimir todos os pares chave-valor.
+    // 4. Usando Métodos do Map: size, delete, has: No seu Map livros, use o
+    // método size para imprimir o número de livros, delete para remover um
+    // livro pelo título e has para verificar se um livro ainda está no Map.
+    // 5. Map com Tipos de Chaves Diferentes: Crie um Map chamado colecao
+    // que contém diferentes tipos de chaves (como string, number, object)
+    // e seus respectivos valores.
+
+    console.log('\nMAP DE LIVROS\n')
+
+    let livros = new Map();
+
+    livros.set('JavaScript', 'Nicolas');
+
+    livros.set('Java', 'Nicolas');
+
+    livros.set('Python', 'Nicolas');
+
+    console.log(livros);
+
+    console.log('\nACESSAR VALOR NO MAP\n')
+
+    console.log(livros.get('JavaScript'));
+
+    console.log('\nITERAR SOBRE UM MAP\n')
+
+    for (let [key, value] of livros) {
+        console.log(key + ' - ' + value);
+    }
+
+    console.log('\nUSANDO MÉTODOS DO MAP\n')
+
+    console.log('Size: ' + livros.size);
+
+    livros.delete('Java');
+
+    console.log('Has: ' + livros.has('Java'));
+
+    console.log('\nMAP COM TIPOS DE CHAVES DIFERENTES\n')
+
+    let colecao = new Map();
+
+    colecao.set('JavaScript', 'Nicolas');
+
+    colecao.set(1, 'Nicolas');
+
+    colecao.set({titulo: 'JavaScript'}, 'Nicolas');
+
+    console.log(colecao);
+
+
+</script>
+</body>
+</html>
