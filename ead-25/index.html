@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+
+// 1. Criar e Adicionar Valores ao Set: Crie um Set chamado frutas e adicione nele três frutas diferentes. Depois, tente adicionar uma fruto que já está no Set.
+// 2. Verificar Valores no Set: Use o método has para verificar se uma fruta específica está no seu Set frutas.
+// 3. Remover Valores do Set: Use o método delete para remover uma fruta do seu Set frutas.
+// 4. Limpar o Set: Use o método clear para limpar todo o seu Set frutas.
+// 5. Tamanho do Set: Crie um Set com vários valores e use a propriedade size para imprimir o número de elementos no Set
+// 6. Iterar Sobre um Set: Use um loop for...of para iterar sobre o seu Set
+// e imprimir cada valor.
+// 7. Criar um Set a Partir de um Array: Crie um array com alguns valores duplicados. Em seguida, crie um Set a partir desse array para remover as duplicatas.
+
+
+console.log('\n 1 SET DE FRUTAS\n')
+
+let frutas = new Set();
+
+frutas.add('Banana');
+
+console.log('\n 2 Veirificação fruta no set \n')
+
+console.log('Tem banana -> ' + frutas.has('Banana'));
+
+console.log('\n 3 Remover fruta do set \n')
+
+frutas.delete('Banana');
+
+console.log('Tem banana -> ' + frutas.has('Banana'));
+
+console.log('\n 4 Limpar o set \n')
+
+frutas.add('Banana');
+frutas.add('Maçã');
+frutas.add('Uva');
+
+frutas.clear();
+
+console.log('Tem banana -> ' + frutas.has('Banana'));
+
+console.log('\n 5 Tamanho do set \n')
+
+frutas.add('Banana');
+frutas.add('Maçã');
+frutas.add('Uva');
+
+console.log('Tamanho do set -> ' + frutas.size);
+
+console.log('\n 6 Iterar sobre o set \n')
+
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log('\n 7 Criar um set a partir de um array \n')
+
+let frutasArray = ['Banana', 'Maçã', 'Uva', 'Banana', 'Maçã', 'Uva'];
+
+let frutasSet = new Set(frutasArray);
+
+console.log(frutasSet);
+
+</script>
+</body>
+</html>
