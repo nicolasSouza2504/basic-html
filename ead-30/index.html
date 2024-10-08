@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+
+    // 1. Criando um Convite: Use a concatenação de strings para criar um
+    // convite. Inclua o nome do destinatário, o tipo de evento e a data, usando
+    // variáveis.
+    // 2. Diário de Bordo: Escreva um pequeno diário de bordo usando template
+    // literals, incluindo data, local e uma descrição do que aconteceu no dia.
+    // 3. Redator de Notícias: Crie uma string que represente uma notícia,
+    //     utilizando o método replace() para substituir um fato errado por um
+    // correto.
+    // 4. Caixa de Comentários: Use o método trim() para limpar os
+    // comentários dos usuários antes de publicá-los em um blog ou fórum.
+    // 5. Carta para um Amigo: Utilize \\n para formatar uma carta para um
+    // amigo, com saudação, corpo da mensagem e despedida, cada um em
+    // uma nova linha.
+    // 6. Citações Famosas: Crie uma string que inclua uma citação famosa de
+    // uma pessoa, utilizando caracteres de escape para incluir aspas na
+    // citação.
+
+    console.log('\n1 Criando um Convite');
+    var nome = 'João';
+    var evento = 'Festa';
+    var data = '01/01/2021';
+    var convite = 'Olá ' + nome + ', você está convidado para a ' + evento + ' que acontecerá no dia ' + data + '.';
+
+    console.log(convite);
+
+    console.log('\n2 Diário de Bordo');
+
+    var data = '01/01/2021';
+    var local = 'Casa';
+    var descricao = 'Hoje acordei cedo e fui correr no parque.';
+
+    var diario = `Data: ${data}
+    Local: ${local}
+    Descrição: ${descricao}`;
+
+    console.log(diario);
+
+    console.log('\n3 Redator de Notícias');
+
+    var noticia = 'O presidente foi eleito com 99% dos votos.';
+
+    var noticiaCorrigida = noticia.replace('99%', '51%');
+
+    console.log(noticiaCorrigida);
+
+    console.log('\n4 Caixa de Comentários');
+
+    var comentario = '   Comentário do usuário.   ';
+
+    var comentarioLimpo = comentario.trim();
+
+    console.log(comentarioLimpo);
+
+    console.log('\n5 Carta para um Amigo');
+
+    var saudacao = 'Olá amigo,';
+    var corpo = 'Espero que esteja tudo bem com você.';
+    var despedida = 'Até mais.';
+
+    var carta = `${saudacao}\n${corpo}\n${despedida}`;
+
+    console.log(carta);
+
+    console.log('\n6 Citações Famosas');
+
+    var citação = 'Albert Einstein disse: \"A imaginação é mais importante que o conhecimento.\"';
+
+    console.log(citação);
+
+
+</script>
+
+</body>
+</html>
+
