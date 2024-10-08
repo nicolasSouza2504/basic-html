@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script>
+
+        // 1. Extrair Dados de um Array: Crie um array com três elementos e utilize a
+        // desestruturação para criar três variáveis, cada uma recebendo um
+        // elemento do array.
+        //     2. Extrair Propriedades de um Objeto: Crie um objeto com propriedades
+        // como nome e idade. Use a desestruturação para criar variáveis a partir
+        // dessas propriedades.
+        // 3. Desestruturação em Funções: Escreva uma função que recebe um
+        // objeto como parâmetro e use a desestruturação para trabalhar com as
+        // propriedades do objeto dentro da função.
+        // 4. Desestruturação com Arrays Aninhados: Crie um array de arrays e use a
+        // desestruturação para criar variáveis a partir dos elementos do array
+        //     aninhado.
+        // 5. Valores Padrão na Desestruturação: Crie um array com um elemento e
+        // utilize a desestruturação para criar duas variáveis. A primeira deve
+        // receber o valor do array e a segunda deve usar um valor padrão.
+        // 6. Trocar Valores de Variáveis com Desestruturação: Crie duas variáveis e
+        // troque os valores entre elas utilizando desestruturação.
+
+        console.log('\n1 Extrair Dados de um Array');
+
+        var frutas = ['banana', 'maçã', 'uva'];
+
+        var [fruta1, fruta2, fruta3] = frutas;
+
+        console.log(fruta1);
+
+        console.log(fruta2);
+
+        console.log(fruta3);
+
+        console.log('\n2 Extrair Propriedades de um Objeto');
+
+        var pessoa = {
+            nome: 'João',
+            idade: 25
+        };
+
+        var {nome, idade} = pessoa;
+
+        console.log(nome);
+
+        console.log(idade);
+
+        console.log('\n3 Desestruturação em Funções');
+
+        function imprimeDados({nome, idade}) {
+            console.log(nome);
+            console.log(idade);
+        }
+
+        imprimeDados(pessoa);
+
+        console.log('\n4 Desestruturação com Arrays Aninhados');
+
+        var numeros = [1, 2, [3, 4, 5]];
+
+        var [num1, num2, [num3, num4, num5]] = numeros;
+
+        console.log(num1);
+
+        console.log(num2);
+
+        console.log(num3);
+
+        console.log(num4);
+
+        console.log(num5);
+
+        console.log('\n5 Valores Padrão na Desestruturação');
+
+        var arr = [1];
+
+        var [valor1, valor2 = 2] = arr;
+
+        console.log(valor1);
+
+        console.log(valor2);
+
+        console.log('\n6 Trocar Valores de Variáveis com Desestruturação');
+
+        var a = 1;
+
+        var b = 2;
+
+        [a, b] = [b, a];
+
+        console.log(a);
+
+        console.log(b);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
