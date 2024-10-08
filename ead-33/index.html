@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script>
+        // 1. Calculadora Simples: Crie Arrow Functions para as operações básicas
+        // de matemática: soma, subtração, multiplicação e divisão. Cada função
+        // deve aceitar dois parâmetros e retornar o resultado da operação.
+        // 2. Função de Saudação Personalizada: Escreva uma Arrow Function que
+        // recebe um nome como parâmetro e retorna uma saudação
+        // personalizada.
+        // 3. Contador com Arrow Function: Use uma Arrow Function dentro de um
+        // setInterval para criar um contador que imprime um número a cada
+        // segundo.
+        // 4. Filtrar Números Pares: Dado um array de números, use uma Arrow
+        // Function com o método filter para criar um novo array apenas com
+        // números pares.
+        // 5. Conversor de Temperatura: Crie uma Arrow Function que converte a
+        // temperatura de Celsius para Fahrenheit.
+        // 6. Função de Ordenação: Implemente uma Arrow Function que recebe um
+        // array de strings e retorna um novo array com os itens ordenados
+        // alfabeticamente.
+
+        console.log('\n1 Calculadora Simples');
+
+        const soma = (a, b) => a + b;
+        const subtracao = (a, b) => a - b;
+        const multiplicacao = (a, b) => a * b;
+
+        console.log(soma(2, 3));
+        console.log(subtracao(5, 2));
+        console.log(multiplicacao(3, 4));
+
+        console.log('\n2 Função de Saudação Personalizada');
+
+        const saudacao = nome => `Olá, ${nome}!`;
+
+        console.log(saudacao('João'));
+
+        console.log('\n3 Contador com Arrow Function');
+
+        let contador = 0;
+
+        const intervalo = setInterval(() => {
+
+            console.log(contador++);
+
+            if (contador === 10) {
+                clearInterval(intervalo);
+            }
+
+        }, 1000);
+
+        console.log('\n4 Filtrar Números Pares');
+
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const pares = numeros.filter(numero => numero % 2 === 0);
+
+        console.log(pares);
+
+        console.log('\n5 Conversor de Temperatura');
+
+        const celsiusParaFahrenheit = celsius => celsius * 1.8 + 32;
+
+        console.log(celsiusParaFahrenheit(30));
+
+        console.log('\n6 Função de Ordenação');
+
+        const frutas = ['banana', 'maçã', 'uva', 'abacaxi'];
+
+        const frutasOrdenadas = frutas.sort();
+
+        console.log(frutasOrdenadas);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
